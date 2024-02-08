@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos em CSS</title>
+    <style>
+        body {
+            font: normal 16px "Segoe UI", sans-serif;
+        }
+
+        a {
+            color: rgb(116, 67, 67);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(104, 49, 49);
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: brown;
+        }
+
+        .especial {
+            background-color: rgb(214, 255, 246);
+        }
+
+        .especial::before {
+            content: ' ⇒ ';
+        }
+
+        .especial::after {
+            content: ' ⇐ ';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        
+        <li><a href="https://youtu.be/vMlrcOVr7po?feature=shared" target="_blank">Repositório Github</a></li>
+        
+       
+        <li><a href="https://youtu.be/vMlrcOVr7po?feature=shared" target="_blank" class="especial">Canal do Youtube</a></li>
+        
+        
+        <li><a href="https://youtu.be/vMlrcOVr7po?feature=shared" target="_blank">Site do Curso em Vídeo</a></li>
+        
+    </ul>
+</body>
+</html>

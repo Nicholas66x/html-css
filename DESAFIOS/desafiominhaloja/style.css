@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+:root {
+    --corlaranja:  #FFAA2A;
+    --corlaranja0: #F09000;
+    --corlaranja1: #BD832B;
+    --corlaranja3: #A37736;
+    --corlaranja4: #705B3B;
+
+    --corcinza0: #BCBCBC;
+    --corcinza1: #424242;
+    
+    --corbranca0: #ffff;
+    --corbranca1: #f1f1f1;
+
+    --corazul00:#5FDAE8;
+    --corazul0: #00D3EA;
+    --corazul1: #3299BB;
+    --corazul2: #6D8A93;
+    --corazul3: #5D6669;
+    --corazul4: #2D3A3E;
+}
+
+body {
+    background-color: var(--corbranca0);
+}
+
+header {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+header h1 {
+    background-color: black;
+    color: var(--corbranca0);
+    text-align: center;
+}
+nav ul li a img {
+    height: ;
+    width: 30px;
+    margin: auto;
+    display: inline-block;
+}
+
