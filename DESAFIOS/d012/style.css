@@ -2,56 +2,167 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
 
-html {background-color: black;}
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
-body {
-    border: 1px black;
-    background-color: rgb(255, 255, 255);
+html, body {
+    min-height: 100vh;
+    font-family: "Passion One";
+    border: 1px solid black;
 }
 
 header {
     background-color: black;
-}
-
-header h1 {
-    font-family: 'Passion One';
-    font-size: 3em;
     color: white;
+    width: auto;
+    height: auto;
     text-align: center;
-    padding: 30px 0px 0px 0px;
-    margin: 0;
 }
 
-header p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1em;
-    font-weight: bold;
-    text-align: center;
-    padding: 0px 0px 30px 0px;
-    
+header > h1 {
+    font-variant: small-caps;
+    padding-top: 50px;
+    margin: 0px;
+    font-size: 2.5em;
 }
 
-header p a small {
-    font-weight: lighter;
+header > p {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding-bottom: 50px;
 }
 
 header p a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+article {
+    font-family: "Sriracha", cursive;
+    font-weight: 600;
+    font-size: 1.4em;
+    font-style: italic;
+}
+
+article.container1 {
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    height: 500px;
+    position: relative;
+}
+
+section.estrofe1 {
+    background-color: rgba(250, 235, 215, 0);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+
+    padding: 20px;
+}
+
+article.container2 {
+    background-color: white;
+    background-image: url("imagens/background001.jpg");
+    background-position: right center;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
+    width: auto;
+    height: 500px;
+    position: relative;
+}
+
+section.estrofe2 {
+    background-color: rgba(214, 255, 167, 0.075);
+    color: white;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+
+    padding: 20px 20px 0px 20px;
+    border-radius: 20px;
+}
+
+article.container3 {
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    height: 750px;
+    position: relative;
+}
+
+section.estrofe3 {
+    background-color: rgba(255, 147, 7, 0);
+    width: 300px;
+    height: 550px;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+
+    padding: 20px;
+}
+
+article.container4 {
+    background-color: rgb(255, 255, 255);
+    background-image: url("imagens/background002.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
+    width: auto;
+    height: 500px;
+    position: relative;
+}
+
+section.estrofe4 {
+    background-color: rgba(12, 12, 12, 0.295);
+    color: white;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+
+    padding: 20px 20px 0px 20px;
+    border-radius: 20px;
+}
+
+article.container5 {
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    height: 750px;
+    position: relative;
+}
+
+section.estrofe5 {
+    background-color: rgba(255, 147, 7, 0);
+    width: 300px;
+    height: 550px;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+
+    padding: 20px;
+}
+
+footer {
+    background-color: black;
+    width: auto;
+    text-align: center;
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+footer a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
-
-main {
-    background-color: white;
-    font-family: 'Sriracha', cursive;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 1.5em;
-}
-
-p.p1 {
-    padding: 40px 20px 40px 20px;
-}
-
-
