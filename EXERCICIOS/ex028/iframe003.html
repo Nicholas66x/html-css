@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Uso de iframe</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            iframe#tela {
+                width: 95vw;
+                height: 400px;
+                border: 1px solid black !important;
+                display: block;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Faça uma escolha</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            iure modi earum sint nemo. Laudantium nemo harum commodi consequatur
+            dicta minima quidem aspernatur delectus quos ipsa? A velit quis vel.
+        </p>
+
+        <ul>
+            <li>
+                <a href="paginasextras/pag001.html" target="frame"
+                    >Primeira Pagina</a
+                >
+            </li>
+            <li>
+                <a href="paginasextras/pag002.html" target="frame"
+                    >Segunda Pagina</a
+                >
+            </li>
+            <li>
+                <a href="paginasextras/pag003.html" target="frame"
+                    >Terceira Pagina</a
+                >
+            </li>
+        </ul>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
+            corrupti saepe nemo harum illum? Rem quaerat impedit iste
+            consequuntur placeat nam modi voluptates nesciunt voluptatem.
+            Facilis vero labore assumenda vitae. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Molestias sequi quam necessitatibus
+            consequuntur, voluptate animi earum amet fugit, voluptatibus
+            architecto doloremque alias placeat sit repellendus ut, enim
+            doloribus aut blanditiis?
+        </p>
+
+        <iframe
+            id="tela"
+            name="frame"
+            src=""
+            srcdoc="<h1>Escolha uma das opções acima</h1><p>
+          corrupti saepe nemo harum illum? Rem quaerat impedit iste
+          consequuntur placeat nam modi voluptates nesciunt voluptatem.
+          Facilis vero labore assumenda vitae. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Molestias sequi quam necessitatibus
+          consequuntur, voluptate animi earum amet fugit, voluptatibus
+          architecto doloremque alias placeat sit repellendus ut, enim
+          doloribus aut blanditiis?</p><img src='imagens/foto-perfil-guanabara.png'> "
+        >
+            <p>infelizmente seu navegador não é compatível</p>
+        </iframe>
+
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+            minima libero ad cupiditate quae? Quam obcaecati consequuntur
+            eligendi consectetur suscipit. Dolor explicabo amet expedita
+            distinctio quia cupiditate numquam repudiandae iure? Lorem, ipsum
+            dolor sit amet consectetur adipisicing elit. Rem perspiciatis
+            repellat atque nesciunt dignissimos dolore blanditiis, illo
+            temporibus quibusdam provident labore nihil quisquam non pariatur
+            voluptas, ullam velit, incidunt ipsam?
+        </p>
+    </body>
+</html>
