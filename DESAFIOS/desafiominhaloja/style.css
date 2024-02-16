@@ -1,50 +1,422 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 :root {
-    --corlaranja:  #FFAA2A;
-    --corlaranja0: #F09000;
-    --corlaranja1: #BD832B;
-    --corlaranja3: #A37736;
-    --corlaranja4: #705B3B;
+    --corlaranja: #ffaa2a;
+    --corlaranja0: #f09000;
+    --corlaranja1: #bd832b;
+    --corlaranja3: #a37736;
+    --corlaranja4: #705b3b;
 
-    --corcinza0: #BCBCBC;
+    --corcinza0: #bcbcbc;
     --corcinza1: #424242;
-    
+
     --corbranca0: #ffff;
     --corbranca1: #f1f1f1;
 
-    --corazul00:#5FDAE8;
-    --corazul0: #00D3EA;
-    --corazul1: #3299BB;
-    --corazul2: #6D8A93;
-    --corazul3: #5D6669;
-    --corazul4: #2D3A3E;
+    --corazul00: #5fdae8;
+    --corazul0: #00d3ea;
+    --corazul1: #3299bb;
+    --corazul2: #6d8a93;
+    --corazul3: #5d6669;
+    --corazul4: #2d3a3e;
 }
 
-body {
-    background-color: var(--corbranca0);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 header {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-}
-
-header h1 {
     background-color: black;
-    color: var(--corbranca0);
+    color: white;
+    width: auto;
+    height: auto;
     text-align: center;
 }
-nav ul li a img {
-    height: ;
-    width: 30px;
-    margin: auto;
-    display: inline-block;
+
+header > h1 {
+    font-size: 0.9em;
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+
+    padding: 20px;
+    margin: 0px;
 }
 
+nav {
+    height: 10vh;
+    background-color: white;
+    text-align: center;
+    position: relative;
+}
+
+article {
+    height: 45vh;
+    width: 100vw;
+}
+
+article#art1 {
+    height: 10vh;
+
+}
+
+article#art3 {
+    height: 40vh;
+    background-color: #808080;
+}
+
+div#barrapreto {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+}
+
+div#barrapreto > a > img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+div:hover#barrapreto > a > img {
+    border-radius: 50%;
+    transform: translate(0%, 5%);
+    transition: 0.5s;
+}
+
+div#adidaslogo {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#adidaslogo > a > img {
+    height: 50px;
+    width: 50px;
+    box-sizing: border-box;
+}
+
+div:hover#adidaslogo > a > img {
+    transform: translate(0%, 5%);
+    transition: 0.5s;
+}
+
+div#pessoapreta {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+div#pessoapreta > a > img {
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+}
+
+div:hover#pessoapreta > a > img {
+    transform: translate(0%, 5%);
+    transition: 0.5s;
+}
+
+div#lupa {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+}
+
+div#lupa > a > img {
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+}
+
+div:hover#lupa > a > img {
+    transform: translate(0%, 5%);
+    transition: 0.5s;
+}
+
+div#volta {
+    margin: 4vw;
+}
+
+div#volta > h2 {
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+div#volta > p {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+div#caixa1 {
+    height: 350px;
+    width: 275px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, 0%);
+}
+
+div#imagem {
+    height: 275px;
+    width: 277px;
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("imagens/mochila-adicolor-archive-m.png");
+    background-size: cover;
+}
+
+div:hover#imagem {
+    height: 280px;
+    width: 290px;
+    transition: 0.5s;
+}
+
+div#desconto {
+    position: absolute;
+    top: 69%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: white;
+}
+
+div#desconto > p {
+    margin: 1px 5px 1px 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+div#preco {
+    position: absolute;
+    top: 77%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+div#preco > h3 {
+    margin: 3px;
+    font-size: 0.8em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+div#preco > h3 > em {
+    color: #e44238;
+    font-style: normal;
+}
+
+div#pe {
+    position: absolute;
+    top: 87%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    margin: 5px;
+    font-size: 0.9em;
+}
+
+div#pe > h3 {
+    font-size: 1em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+div#pe > p {
+    font-weight: 500;
+    color: #313131;
+}
+
+div#caixa2 {
+    height: 350px;
+    width: 275px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+div#imagem2 {
+    height: 275px;
+    width: 277px;
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("imagens/mochila-infantil-marvel-i-am-groot-m.png");
+    background-size: cover;
+}
+
+div:hover#imagem2 {
+    height: 280px;
+    width: 290px;
+    transition: 0.5s;
+}
+
+div#preco2 {
+    position: absolute;
+    top: 76%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+div#preco2 > h3 {
+    margin: 3px;
+    font-size: 0.8em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+div#pe2 {
+    position: absolute;
+    top: 87%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+    margin: 5px;
+    font-size: 0.9em;
+}
+
+div#pe2 > h3 {
+    font-size: 1em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+div#caixa3 {
+    height: 350px;
+    width: 275px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -200%);
+}
+
+div#imagem3 {
+    height: 275px;
+    width: 277px;
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("imagens/chuteira-predator-freestyle-m.png");
+    background-size: cover;
+}
+
+div:hover#imagem3 {
+    height: 280px;
+    width: 290px;
+    transition: 0.5s;
+}
+
+div#desconto3 {
+    position: absolute;
+    top: 69%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: white;
+}
+
+div#desconto3 > p {
+    margin: 1px 5px 1px 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+div#preco3 {
+    position: absolute;
+    top: 77%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+div#preco3 > h3 {
+    margin: 3px;
+    font-size: 0.8em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+div#preco3 h3 em {
+    color: #e44238;
+    font-style: normal;
+}
+
+div#pe3 {
+    position: absolute;
+    top: 87%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    margin: 5px;
+    font-size: 0.9em;
+}
+
+div#pe3 > h3 {
+    font-size: 1em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+div#voltaulas h2 {
+    font-weight: bold;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    padding: 70px 70px 10px 60px;
+    color: white;
+}
+
+div#voltaulas p {
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding: 0px 0px 0px 65px;
+    color: white;
+}
