@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: rgb(150, 150, 150);
+}
+
+header > h1 {
+    text-align: center;
+}
+
+menu ul {
+    list-style-type: none;
+    background-color: rgb(100, 100, 100);
+}
+
+menu li {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+article {
+    width: 500px;
+    display: block;
+    margin: auto;
+}
